@@ -1,7 +1,25 @@
+source 'https://bitbucket.org/growabanana/fitlab-specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '10.0'
+
 use_frameworks!
 
+def shared_pods
+  pod '${POD_NAME}', :path => '../../../'
+  # Add your shared pods here
+  # Keep them local to benefit from the global repository
+  # Example:
+  # pod 'FLBluetoothKit', :path => '../../../'
+  # pod 'FLDataKit', :path => '../../../'
+  # pod 'FLLogKit', :path => '../../../'
+  # pod 'RZBluetoothRLB', :path => '../../../'
+  # pod 'ZSInjectKit', :path => '../../../'
+end
+
+
 target '${POD_NAME}_Example' do
-  pod '${POD_NAME}', :path => '../'
+  shared_pods
 
   target '${POD_NAME}_Tests' do
     inherit! :search_paths
@@ -9,3 +27,17 @@ target '${POD_NAME}_Example' do
     ${INCLUDED_PODS}
   end
 end
+
+target '${POD_NAME}-Watch' do
+  shared_pods
+
+  platform :watchos, '4.0'
+end
+
+
+target '${POD_NAME}-Watch Extension' do
+  shared_pods
+
+  platform :watchos, '4.0'
+end
+

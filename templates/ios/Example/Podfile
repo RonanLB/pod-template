@@ -28,14 +28,14 @@ target '${POD_NAME}_Example' do
   end
 end
 
-target '${POD_NAME}-Watch' do
+target '${POD_NAME}Watch' do
   shared_pods
 
   platform :watchos, '4.0'
 end
 
 
-target '${POD_NAME}-Watch Extension' do
+target '${POD_NAME}Watch Extension' do
   shared_pods
 
   platform :watchos, '4.0'

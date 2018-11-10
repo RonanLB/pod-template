@@ -88,6 +88,16 @@ RUBY
     end
 
     def rename_files
+      FileUtils.mv "Pod/Resources/PROJECT.bundle", "Pod/Resources/#{pod_name}.bundle"
+      # change source file prefixes
+      ["CPDModule.h", "CPDModule.m"].each do |file|
+          before = "./Pod/Classes/" + file
+          next unless File.exists? before
+
+          after = "./Pod/Classes/" + file.gsub("CPD", prefix)
+          File.rename before, after
+      end
+
       # shared schemes have project specific names
       scheme_path = project_folder + "/PROJECT.xcodeproj/xcshareddata/xcschemes/"
       File.rename(scheme_path + "PROJECT.xcscheme", scheme_path +  @configurator.pod_name + "-Example.xcscheme")
@@ -138,7 +148,7 @@ RUBY
     end
 
     def replace_internal_project_settings
-      Dir.glob(project_folder + "/**/**/**/**").each do |name|
+      Dir.glob("/**/**/**/**/**").each do |name|
         next if Dir.exists? name
         text = File.read(name)
 

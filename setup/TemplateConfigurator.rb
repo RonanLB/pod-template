@@ -166,7 +166,7 @@ module Pod
     end
 
     def rename_classes_folder
-      FileUtils.mv "./Resources/PROJECT.bundle", "./Resources/#{pod_name}.bundle"
+      FileUtils.mv "Resources/PROJECT.bundle", "Resources/#{pod_name}.bundle"
       # change source file prefixes
       ["CPDModule.h", "CPDModule.m"].each do |file|
           before = "./Classes/" + file

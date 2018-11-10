@@ -105,20 +105,20 @@ RUBY
           File.rename before, after
         end
 
-        ["CPDExtensionDelegate.h", "CPDExtensionDelegate.m", "CPDInterfaceController.h", "CPDInterfaceController.m", "CPDNotificationController.h", "CPDNotificationController.m"].each do |file|
-          before = project_folder + "/PROJECTWatch/" + file
-          next unless File.exists? before
-
-          after = project_folder + "/PROJECTWatch/" + file.gsub("CPD", prefix)
-          File.rename before, after
-        end
-
         # rename project related files
         ["PROJECT-Info.plist", "PROJECT-Prefix.pch", "PROJECT.entitlements"].each do |file|
           before = project_folder + "/PROJECT/" + file
           next unless File.exists? before
 
           after = project_folder + "/PROJECT/" + file.gsub("PROJECT", @configurator.pod_name)
+          File.rename before, after
+        end
+
+        ["CPDExtensionDelegate.h", "CPDExtensionDelegate.m", "CPDInterfaceController.h", "CPDInterfaceController.m", "CPDNotificationController.h", "CPDNotificationController.m"].each do |file|
+          before = project_folder + "/PROJECTWatch/" + file
+          next unless File.exists? before
+
+          after = project_folder + "/PROJECTWatch/" + file.gsub("CPD", prefix)
           File.rename before, after
         end
       end

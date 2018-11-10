@@ -123,10 +123,10 @@ RUBY
         File.rename(project_folder + "/PROJECT", project_folder + "/" + @configurator.pod_name)
       end
       if Dir.exist? project_folder + "/WATCHPROJECT"
-        File.rename(project_folder + "/WATCHPROJECT", project_folder + "/" + @string_replacements.WATCHPROJECT)
+        File.rename(project_folder + "/WATCHPROJECT", project_folder + "/" + @configurator.pod_name + "Watch")
       end
       if Dir.exist? project_folder + "/WATCHPROJECT Extension"
-        File.rename(project_folder + "/WATCHPROJECT Extension", project_folder + "/" + @string_replacements.WATCHPROJECT + ' Extension')
+        File.rename(project_folder + "/WATCHPROJECT Extension", project_folder + "/" + @configurator.pod_name + "Watch Extension")
       end
     end
 

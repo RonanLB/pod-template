@@ -5,7 +5,7 @@
 
 podname = '${POD_NAME}'
 version = '0.0.1'
-root_path = ''
+root_path = '.'
 source_path = root_path+'/Classes'
 resource_path = root_path+'/Resources'
 

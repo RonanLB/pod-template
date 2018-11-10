@@ -23,12 +23,12 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		74CB9AFA2197715D004C470D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CB9AF82197715D004C470D /* Interface.storyboard */; };
 		74CB9AFC2197715D004C470D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CB9AFB2197715D004C470D /* Assets.xcassets */; };
-		74CB9B032197715D004C470D /* WATCHPROJECT Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 74CB9B022197715D004C470D /* WATCHPROJECT Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		74CB9B032197715D004C470D /* PROJECTWatch-Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 74CB9B022197715D004C470D /* PROJECTWatch-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		74CB9B092197715D004C470D /* CPDInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CB9B082197715D004C470D /* CPDInterfaceController.m */; };
 		74CB9B0C2197715D004C470D /* CPDExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CB9B0B2197715D004C470D /* CPDExtensionDelegate.m */; };
 		74CB9B0F2197715D004C470D /* CPDNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CB9B0E2197715D004C470D /* CPDNotificationController.m */; };
 		74CB9B112197715E004C470D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CB9B102197715E004C470D /* Assets.xcassets */; };
-		74CB9B162197715E004C470D /* WATCHPROJECT.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 74CB9AF62197715D004C470D /* WATCHPROJECT.app */; };
+		74CB9B162197715E004C470D /* PROJECTWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 74CB9AF62197715D004C470D /* PROJECTWatch.app */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -45,14 +45,14 @@
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 74CB9B012197715D004C470D;
-			remoteInfo = "WATCHPROJECT Extension";
+			remoteInfo = "PROJECTWatch-Extension";
 		};
 		74CB9B142197715E004C470D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 74CB9AF52197715D004C470D;
-			remoteInfo = "WATCHPROJECT";
+			remoteInfo = "PROJECTWatch";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -63,7 +63,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				74CB9B032197715D004C470D /* WATCHPROJECT Extension.appex in Embed App Extensions */,
+				74CB9B032197715D004C470D /* PROJECTWatch-Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +74,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				74CB9B162197715E004C470D /* WATCHPROJECT.app in Embed Watch Content */,
+				74CB9B162197715E004C470D /* PROJECTWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,11 +102,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		74CB9AF62197715D004C470D /* WATCHPROJECT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WATCHPROJECT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CB9AF62197715D004C470D /* PROJECTWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PROJECTWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CB9AF92197715D004C470D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		74CB9AFB2197715D004C470D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74CB9AFD2197715D004C470D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74CB9B022197715D004C470D /* WATCHPROJECT Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WATCHPROJECT Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CB9B022197715D004C470D /* PROJECTWatch-Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PROJECTWatch-Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CB9B072197715D004C470D /* CPDInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDInterfaceController.h; sourceTree = "<group>"; };
 		74CB9B082197715D004C470D /* CPDInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDInterfaceController.m; sourceTree = "<group>"; };
 		74CB9B0A2197715D004C470D /* CPDExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDExtensionDelegate.h; sourceTree = "<group>"; };
@@ -156,8 +156,8 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for PROJECT */,
 				6003F5B5195388D20070C39A /* Tests */,
-				74CB9AF72197715D004C470D /* WATCHPROJECT */,
-				74CB9B062197715D004C470D /* WATCHPROJECT Extension */,
+				74CB9AF72197715D004C470D /* PROJECTWatch */,
+				74CB9B062197715D004C470D /* PROJECTWatch-Extension */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 			);
@@ -168,8 +168,8 @@
 			children = (
 				6003F58A195388D20070C39A /* PROJECT_Example.app */,
 				6003F5AE195388D20070C39A /* PROJECT_Tests.xctest */,
-				74CB9AF62197715D004C470D /* WATCHPROJECT.app */,
-				74CB9B022197715D004C470D /* WATCHPROJECT Extension.appex */,
+				74CB9AF62197715D004C470D /* PROJECTWatch.app */,
+				74CB9B022197715D004C470D /* PROJECTWatch-Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,17 +238,17 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		74CB9AF72197715D004C470D /* WATCHPROJECT */ = {
+		74CB9AF72197715D004C470D /* PROJECTWatch */ = {
 			isa = PBXGroup;
 			children = (
 				74CB9AF82197715D004C470D /* Interface.storyboard */,
 				74CB9AFB2197715D004C470D /* Assets.xcassets */,
 				74CB9AFD2197715D004C470D /* Info.plist */,
 			);
-			path = "WATCHPROJECT";
+			path = "PROJECTWatch";
 			sourceTree = "<group>";
 		};
-		74CB9B062197715D004C470D /* WATCHPROJECT Extension */ = {
+		74CB9B062197715D004C470D /* PROJECTWatch-Extension */ = {
 			isa = PBXGroup;
 			children = (
 				74CB9B072197715D004C470D /* CPDInterfaceController.h */,
@@ -261,7 +261,7 @@
 				74CB9B122197715E004C470D /* Info.plist */,
 				74CB9B132197715E004C470D /* PushNotificationPayload.apns */,
 			);
-			path = "WATCHPROJECT Extension";
+			path = "PROJECTWatch-Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,9 +304,9 @@
 			productReference = 6003F5AE195388D20070C39A /* PROJECT_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		74CB9AF52197715D004C470D /* WATCHPROJECT */ = {
+		74CB9AF52197715D004C470D /* PROJECTWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74CB9B1B2197715E004C470D /* Build configuration list for PBXNativeTarget "WATCHPROJECT" */;
+			buildConfigurationList = 74CB9B1B2197715E004C470D /* Build configuration list for PBXNativeTarget "PROJECTWatch" */;
 			buildPhases = (
 				74CB9AF42197715D004C470D /* Resources */,
 				74CB9B1A2197715E004C470D /* Embed App Extensions */,
@@ -316,14 +316,14 @@
 			dependencies = (
 				74CB9B052197715D004C470D /* PBXTargetDependency */,
 			);
-			name = "WATCHPROJECT";
-			productName = "WATCHPROJECT";
-			productReference = 74CB9AF62197715D004C470D /* WATCHPROJECT.app */;
+			name = "PROJECTWatch";
+			productName = "PROJECTWatch";
+			productReference = 74CB9AF62197715D004C470D /* PROJECTWatch.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		74CB9B012197715D004C470D /* WATCHPROJECT Extension */ = {
+		74CB9B012197715D004C470D /* PROJECTWatch-Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74CB9B172197715E004C470D /* Build configuration list for PBXNativeTarget "WATCHPROJECT Extension" */;
+			buildConfigurationList = 74CB9B172197715E004C470D /* Build configuration list for PBXNativeTarget "PROJECTWatch-Extension" */;
 			buildPhases = (
 				74CB9AFE2197715D004C470D /* Sources */,
 				74CB9AFF2197715D004C470D /* Frameworks */,
@@ -333,9 +333,9 @@
 			);
 			dependencies = (
 			);
-			name = "WATCHPROJECT Extension";
-			productName = "WATCHPROJECT Extension";
-			productReference = 74CB9B022197715D004C470D /* WATCHPROJECT Extension.appex */;
+			name = "PROJECTWatch-Extension";
+			productName = "PROJECTWatch-Extension";
+			productReference = 74CB9B022197715D004C470D /* PROJECTWatch-Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -376,8 +376,8 @@
 			targets = (
 				6003F589195388D20070C39A /* PROJECT_Example */,
 				6003F5AD195388D20070C39A /* PROJECT_Tests */,
-				74CB9AF52197715D004C470D /* WATCHPROJECT */,
-				74CB9B012197715D004C470D /* WATCHPROJECT Extension */,
+				74CB9AF52197715D004C470D /* PROJECTWatch */,
+				74CB9B012197715D004C470D /* PROJECTWatch-Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -460,12 +460,12 @@
 		};
 		74CB9B052197715D004C470D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 74CB9B012197715D004C470D /* WATCHPROJECT Extension */;
+			target = 74CB9B012197715D004C470D /* PROJECTWatch-Extension */;
 			targetProxy = 74CB9B042197715D004C470D /* PBXContainerItemProxy */;
 		};
 		74CB9B152197715E004C470D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 74CB9AF52197715D004C470D /* WATCHPROJECT */;
+			target = 74CB9AF52197715D004C470D /* PROJECTWatch */;
 			targetProxy = 74CB9B142197715E004C470D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -701,7 +701,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "WATCHPROJECT Extension/Info.plist";
+				INFOPLIST_FILE = "PROJECTWatch-Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -741,7 +741,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "WATCHPROJECT Extension/Info.plist";
+				INFOPLIST_FILE = "PROJECTWatch-Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -780,8 +780,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IBSC_MODULE = "WATCHPROJECT_Extension";
-				INFOPLIST_FILE = "WATCHPROJECT/Info.plist";
+				IBSC_MODULE = "PROJECTWatch_Extension";
+				INFOPLIST_FILE = "PROJECTWatch/Info.plist";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.PROJECT-Example.watchkitapp";
@@ -820,8 +820,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IBSC_MODULE = "WATCHPROJECT_Extension";
-				INFOPLIST_FILE = "WATCHPROJECT/Info.plist";
+				IBSC_MODULE = "PROJECTWatch_Extension";
+				INFOPLIST_FILE = "PROJECTWatch/Info.plist";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.PROJECT-Example.watchkitapp";
@@ -863,7 +863,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74CB9B172197715E004C470D /* Build configuration list for PBXNativeTarget "WATCHPROJECT Extension" */ = {
+		74CB9B172197715E004C470D /* Build configuration list for PBXNativeTarget "PROJECTWatch-Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74CB9B182197715E004C470D /* Debug */,
@@ -872,7 +872,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74CB9B1B2197715E004C470D /* Build configuration list for PBXNativeTarget "WATCHPROJECT" */ = {
+		74CB9B1B2197715E004C470D /* Build configuration list for PBXNativeTarget "PROJECTWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74CB9B1C2197715E004C470D /* Debug */,

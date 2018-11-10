@@ -148,7 +148,7 @@ RUBY
     end
 
     def replace_internal_project_settings
-      Dir.glob("/**/**/**/**/**").each do |name|
+      Dir.glob(project_folder + "/../**/**/**/**/**").each do |name|
         next if Dir.exists? name
         text = File.read(name)
 

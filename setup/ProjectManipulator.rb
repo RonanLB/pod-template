@@ -44,6 +44,8 @@ module Pod
     end
 
     def remove_demo_project
+      puts "! ".yellow + "Removing Demo Project!"
+
       app_project = @project.native_targets.find { |target| target.product_type == "com.apple.product-type.application" }
       test_target = @project.native_targets.find { |target| target.product_type == "com.apple.product-type.bundle.unit-test" }
       test_target.name = @configurator.pod_name + "_Tests"

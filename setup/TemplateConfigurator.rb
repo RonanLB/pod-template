@@ -4,7 +4,7 @@ require 'colored2'
 module Pod
   class TemplateConfigurator
 
-    attr_reader :pod_name, :pods_for_podfile, :prefixes, :test_example_file, :username, :email
+    attr_reader :pod_name, :pods_for_podfile, :prefixes, :test_example_file, :username, :email, :string_replacements
 
     def initialize(pod_name)
       @pod_name = pod_name
@@ -68,6 +68,14 @@ module Pod
     end
 
     def run
+      @string_replacements = {
+        "PROJECT_OWNER" => @configurator.user_name,
+        "TODAYS_DATE" => @configurator.date,
+        "TODAYS_YEAR" => @configurator.year,
+        "PROJECT" => @configurator.pod_name,
+        "CPD" => @prefix,
+      }
+
       @message_bank.welcome_message
 
       ConfigureIOS.perform(configurator: self)
@@ -169,10 +177,10 @@ module Pod
       FileUtils.mv "Pod/Resources/PROJECT.bundle", "Pod/Resources/#{pod_name}.bundle"
       # change source file prefixes
       ["CPDModule.h", "CPDModule.m"].each do |file|
-          before = "./Classes/" + file
+          before = "./Pod/Classes/" + file
           next unless File.exists? before
 
-          after = "./Classes/" + file.gsub("CPD", prefix)
+          after = "./Pod/Classes/" + file.gsub("CPD", prefix)
           File.rename before, after
       end
 

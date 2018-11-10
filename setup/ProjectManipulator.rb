@@ -115,10 +115,10 @@ RUBY
         end
 
         ["CPDExtensionDelegate.h", "CPDExtensionDelegate.m", "CPDInterfaceController.h", "CPDInterfaceController.m", "CPDNotificationController.h", "CPDNotificationController.m"].each do |file|
-          before = project_folder + "/PROJECTWatch/" + file
+          before = project_folder + "/PROJECTWatch-Extension/" + file
           next unless File.exists? before
 
-          after = project_folder + "/PROJECTWatch/" + file.gsub("CPD", prefix)
+          after = project_folder + "/PROJECTWatch-Extension/" + file.gsub("CPD", prefix)
           File.rename before, after
         end
       end

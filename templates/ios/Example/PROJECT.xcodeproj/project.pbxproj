@@ -38,7 +38,7 @@
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = PROJECT;
+			remoteInfo = "PROJECT";
 		};
 		74CB9B042197715D004C470D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,7 +52,7 @@
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 74CB9AF52197715D004C470D;
-			remoteInfo = WATCHPROJECT;
+			remoteInfo = "WATCHPROJECT";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -198,7 +198,7 @@
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for PROJECT";
-			path = PROJECT;
+			path = "PROJECT";
 			sourceTree = "<group>";
 		};
 		6003F594195388D20070C39A /* Supporting Files */ = {
@@ -245,7 +245,7 @@
 				74CB9AFB2197715D004C470D /* Assets.xcassets */,
 				74CB9AFD2197715D004C470D /* Info.plist */,
 			);
-			path = WATCHPROJECT;
+			path = "WATCHPROJECT";
 			sourceTree = "<group>";
 		};
 		74CB9B062197715D004C470D /* WATCHPROJECT Extension */ = {
@@ -281,8 +281,8 @@
 			dependencies = (
 				74CB9B152197715E004C470D /* PBXTargetDependency */,
 			);
-			name = PROJECT_Example;
-			productName = PROJECT;
+			name = "PROJECT_Example";
+			productName = "PROJECT";
 			productReference = 6003F58A195388D20070C39A /* PROJECT_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -316,8 +316,8 @@
 			dependencies = (
 				74CB9B052197715D004C470D /* PBXTargetDependency */,
 			);
-			name = WATCHPROJECT;
-			productName = WATCHPROJECT;
+			name = "WATCHPROJECT";
+			productName = "WATCHPROJECT";
 			productReference = 74CB9AF62197715D004C470D /* WATCHPROJECT.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
@@ -346,7 +346,7 @@
 			attributes = {
 				CLASSPREFIX = CPD;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = PROJECT_OWNER;
+				ORGANIZATIONNAME = "PROJECT_OWNER";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -587,7 +587,7 @@
 				GCC_PREFIX_HEADER = "PROJECT/PROJECT-Prefix.pch";
 				INFOPLIST_FILE = "PROJECT/PROJECT-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.--PRODUCT-NAME-rfc1034identifier-";
+                PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.${PRODUCT-NAME-rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -601,7 +601,7 @@
 				GCC_PREFIX_HEADER = "PROJECT/PROJECT-Prefix.pch";
 				INFOPLIST_FILE = "PROJECT/PROJECT-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.--PRODUCT-NAME-rfc1034identifier-";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.${PRODUCT-NAME-rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -754,8 +754,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IBSC_MODULE = WATCHPROJECT_Extension;
-				INFOPLIST_FILE = WATCHPROJECT/Info.plist;
+				IBSC_MODULE = "WATCHPROJECT_Extension";
+				INFOPLIST_FILE = "WATCHPROJECT/Info.plist";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.PROJECT-Example.watchkitapp";
@@ -794,8 +794,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IBSC_MODULE = WATCHPROJECT_Extension;
-				INFOPLIST_FILE = WATCHPROJECT/Info.plist;
+				IBSC_MODULE = "WATCHPROJECT_Extension";
+				INFOPLIST_FILE = "WATCHPROJECT/Info.plist";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.PROJECT-Example.watchkitapp";

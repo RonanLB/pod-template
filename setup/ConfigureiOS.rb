@@ -15,6 +15,8 @@ module Pod
 
       configurator.set_test_framework("xctest", "m", "ios")
 
+      prefix = nil
+
       loop do
         prefix = configurator.ask("What is your class prefix")
 

@@ -23,7 +23,6 @@ module Pod
         "TODAYS_YEAR" => @configurator.year,
         "PROJECT" => @configurator.pod_name,
         "CPD" => @prefix,
-        "WATCHPROJECT" => @configurator.pod_name + "Watch",
       }
       replace_internal_project_settings
 
@@ -122,11 +121,11 @@ RUBY
       if Dir.exist? project_folder + "/PROJECT"
         File.rename(project_folder + "/PROJECT", project_folder + "/" + @configurator.pod_name)
       end
-      if Dir.exist? project_folder + "/WATCHPROJECT"
-        File.rename(project_folder + "/WATCHPROJECT", project_folder + "/" + @configurator.pod_name + "Watch")
+      if Dir.exist? project_folder + "/PROJECTWatch"
+        File.rename(project_folder + "/PROJECTWatch", project_folder + "/" + @configurator.pod_name + "Watch")
       end
-      if Dir.exist? project_folder + "/WATCHPROJECT Extension"
-        File.rename(project_folder + "/WATCHPROJECT Extension", project_folder + "/" + @configurator.pod_name + "Watch Extension")
+      if Dir.exist? project_folder + "/PROJECTWatch-Extension"
+        File.rename(project_folder + "/PROJECTWatch-Extension", project_folder + "/" + @configurator.pod_name + "Watch-Extension")
       end
     end
 

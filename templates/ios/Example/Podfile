@@ -35,7 +35,7 @@ target '${POD_NAME}Watch' do
 end
 
 
-target '${POD_NAME}Watch Extension' do
+target '${POD_NAME}Watch-Extension' do
   shared_pods
 
   platform :watchos, '4.0'

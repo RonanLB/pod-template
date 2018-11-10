@@ -5,7 +5,7 @@
 
 podname = '${POD_NAME}'
 version = '0.0.1'
-root_path = '.'
+root_path = 'libraries/'+podname+'/'+podname
 source_path = root_path+'/Classes'
 resource_path = root_path+'/Resources'
 
@@ -19,7 +19,7 @@ This library is part of FitLab/ZealSta, it does not have a description yet.
                        DESC
 
   s.homepage         = 'https://bitbucket.org/growabanana/fitlab-ios'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'libraries/'+podname+'/LICENSE' }
   s.author           = { '${USER_NAME}' => '${USER_EMAIL}' }
   s.source           = { :git => 'https://bitbucket.org/growabanana/fitlab-ios.git', :tag => podname+'-v'+String(s.version) }
 

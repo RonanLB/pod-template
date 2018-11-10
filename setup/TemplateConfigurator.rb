@@ -79,6 +79,7 @@ module Pod
       customise_prefix
       rename_classes_folder
       ensure_carthage_compatibility
+      ensure_single_repo_compatibility
       run_pod_install
 
       @message_bank.farewell_message
@@ -88,6 +89,11 @@ module Pod
 
     def ensure_carthage_compatibility
       FileUtils.ln_s('Example/Pods/Pods.xcodeproj', '_Pods.xcodeproj')
+    end
+
+    def ensure_single_repo_compatibility
+      FileUtils.mv("#{pod_name}.podspec", "../../#{pod_name}.podspec")
+      FileUtils.ln_s("../../#{pod_name}.podspec", "#{pod_name}.podspec")
     end
 
     def run_pod_install

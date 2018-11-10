@@ -4,7 +4,7 @@ require 'colored2'
 module Pod
   class TemplateConfigurator
 
-    attr_reader :pod_name, :pods_for_podfile, :prefixes, :test_example_file, :username, :email, :string_replacements
+    attr_reader :pod_name, :pods_for_podfile, :prefixes, :test_example_file, :username, :email
 
     def initialize(pod_name)
       @pod_name = pod_name
@@ -68,14 +68,6 @@ module Pod
     end
 
     def run
-      @string_replacements = {
-        "PROJECT_OWNER" => @configurator.user_name,
-        "TODAYS_DATE" => @configurator.date,
-        "TODAYS_YEAR" => @configurator.year,
-        "PROJECT" => @configurator.pod_name,
-        "CPD" => @prefix,
-      }
-
       @message_bank.welcome_message
 
       ConfigureIOS.perform(configurator: self)

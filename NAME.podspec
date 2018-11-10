@@ -34,6 +34,8 @@ This library is part of FitLab/ZealSta, it does not have a description yet.
     'WARNING_CFLAGS' => '$(inherited) -Wno-shorten-64-to-32'
   }
 
+  s.dependency 'ZSInjectKit'
+
   # Library specifics
   # Add here the specific dependencies for your project
   # Example:
@@ -41,5 +43,4 @@ This library is part of FitLab/ZealSta, it does not have a description yet.
   # s.dependency 'FLLogKit'
   # s.dependency 'FLDataKit'
   # s.dependency 'RZBluetoothRLB'
-  # s.dependency 'ZSInjectKit'
 end

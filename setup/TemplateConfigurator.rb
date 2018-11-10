@@ -166,6 +166,27 @@ module Pod
     end
 
     def rename_classes_folder
+      FileUtils.mv "./Resources/NAME.bundle", "./Resources/#{pod_name}.bundle"
+      # change source file prefixes
+      ["CPDModule.h", "CPDModule.m"].each do |file|
+          before = "./Classes/" + file
+          next unless File.exists? before
+
+          after = "./Classes/" + file.gsub("CPD", prefix)
+          File.rename before, after
+      end
+
+      Dir.glob(project_folder + "/**/**/**/**").each do |name|
+        next if Dir.exists? name
+        text = File.read(name)
+
+        for find, replace in @string_replacements
+            text = text.gsub(find, replace)
+        end
+
+        File.open(name, "w") { |file| file.puts text }
+      end
+
       FileUtils.mv "Pod", @pod_name
     end
 

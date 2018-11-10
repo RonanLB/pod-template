@@ -613,7 +613,7 @@
 				GCC_PREFIX_HEADER = "PROJECT/PROJECT-Prefix.pch";
 				INFOPLIST_FILE = "PROJECT/PROJECT-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.${PRODUCT-NAME-rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.PROJECT-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -627,7 +627,7 @@
 				GCC_PREFIX_HEADER = "PROJECT/PROJECT-Prefix.pch";
 				INFOPLIST_FILE = "PROJECT/PROJECT-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.${PRODUCT-NAME-rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.growabanana.demo.PROJECT-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

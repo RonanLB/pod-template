@@ -6,15 +6,15 @@ platform :ios, '10.0'
 use_frameworks!
 
 def shared_pods
-  pod '${POD_NAME}', :path => '../'
+  pod '${POD_NAME}', :path => '../../../'
   # Add your shared pods here
   # Keep them local to benefit from the global repository
   # Example:
-  # pod 'FLBluetoothKit', :path => '../FLBluetoothKit/'
-  # pod 'FLDataKit', :path => '../FLDataKit/'
-  # pod 'FLLogKit', :path => '../FLLogKit/'
-  # pod 'RZBluetoothRLB', :path => '../RZBluetoothRLB/'
-  # pod 'ZSInjectKit', :path => '../ZSInjectKit/'
+  # pod 'FLBluetoothKit', :path => '../../../'
+  # pod 'FLDataKit', :path => '../../../'
+  # pod 'FLLogKit', :path => '../../../'
+  # pod 'RZBluetoothRLB', :path => '../../../'
+  # pod 'ZSInjectKit', :path => '../../../'
 end
 
 

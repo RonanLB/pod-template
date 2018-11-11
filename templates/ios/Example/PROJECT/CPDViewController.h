@@ -1,10 +1,4 @@
-//
-//  CPDViewController.h
-//  PROJECT
-//
-//  Created by PROJECT_OWNER on TODAYS_DATE.
-//  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
-//
+// Copyright 2018-present Growabanana. All Rights Reserved.
 
 @import UIKit;
 

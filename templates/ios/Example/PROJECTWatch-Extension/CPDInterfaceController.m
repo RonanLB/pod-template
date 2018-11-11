@@ -1,10 +1,4 @@
-//
-//  CPDInterfaceController.m
-//  PROJECTWatch-Extension
-//
-//  Created by Ronan Le Boite on 11/10/18.
-//  Copyright © 2018 PROJECT_OWNER. All rights reserved.
-//
+// Copyright 2018-present Growabanana. All Rights Reserved.
 
 #import "CPDInterfaceController.h"
 
@@ -16,23 +10,23 @@
 
 @implementation CPDInterfaceController
 
-- (void)awakeWithContext:(id)context {
-    [super awakeWithContext:context];
-
-    // Configure interface objects here.
+- (void)awakeWithContext:(id)context
+{
+  [super awakeWithContext:context];
+  
+  // Configure interface objects here.
 }
 
-- (void)willActivate {
-    // This method is called when watch view controller is about to be visible to user
-    [super willActivate];
+- (void)willActivate
+{
+  // This method is called when watch view controller is about to be visible to user
+  [super willActivate];
 }
 
-- (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
-    [super didDeactivate];
+- (void)didDeactivate
+{
+  // This method is called when watch view controller is no longer visible
+  [super didDeactivate];
 }
 
 @end
-
-
-

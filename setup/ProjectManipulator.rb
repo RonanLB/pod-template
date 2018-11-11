@@ -155,7 +155,6 @@ RUBY
       Dir.glob(project_folder + "/**/**/**/**/**").each do |name|
         next if Dir.exists? name
         text = File.read(name)
-        puts "Processing file: " + name
 
         for find, replace in @string_replacements
             text = text.gsub(find, replace)
@@ -167,7 +166,6 @@ RUBY
       Dir.glob(pod_folder + "/**/**/**/**/**").each do |name|
         next if Dir.exists? name
         text = File.read(name)
-        puts "Processing file: " + name
 
         for find, replace in @string_replacements
             text = text.gsub(find, replace)

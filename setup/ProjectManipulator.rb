@@ -88,7 +88,7 @@ RUBY
     end
 
     def pod_folder
-      File.dirname 'Pod'
+      File.dirname 'Pod/Classes'
     end
 
     def rename_files

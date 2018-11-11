@@ -88,7 +88,7 @@ RUBY
     end
 
     def rename_files
-      FileUtils.mv "Pod/Resources/PROJECT.bundle", "Pod/Resources/#{pod_name}.bundle"
+      FileUtils.mv "Pod/Resources/PROJECT.bundle", "Pod/Resources/" + @configurator.pod_name + ".bundle"
       # change source file prefixes
       ["CPDModule.h", "CPDModule.m"].each do |file|
           before = "./Pod/Classes/" + file

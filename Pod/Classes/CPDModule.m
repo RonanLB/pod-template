@@ -13,7 +13,7 @@
 - (void)configure
 {
   // Insert here your module configuration
-  // Ecample
+  // Example
   // [[[self binder] bindClass:CPDSuperClass.class] in:ZSIScopeGlobal];
 }
 

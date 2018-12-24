@@ -8,7 +8,7 @@ use_frameworks!
 def shared_pods
   pod '${POD_NAME}', :path => '../../../'
   pod 'ZSInjectKit', :path => '../../../'
-  pod 'FLLogKit', :path => '../../../'
+  pod 'ZSLogKit', :path => '../../../'
 
   # Add your shared pods here
   # Keep them local to benefit from the global repository
